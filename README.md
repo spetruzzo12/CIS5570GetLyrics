@@ -3,10 +3,15 @@
 Download LibCURL First (need Visual Studio 19):
 
 Get latest vcpkg zip file from https://github.com/microsoft/vcpkg/releases (e.g. https://github.com/microsoft/vcpkg/archive/2019.09.zip) and extract it to a folder of your choice (e.g. C:\vcpkg\)
+
 Open Developer Command Prompt for VS 2017 (see Windows Start menu or %PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools\) and cd to C:\vcpkg\
+
 Run bootstrap-vcpkg.bat
+
 Run vcpkg.exe integrate install
+
 Run vcpkg.exe install curl
+
 Create a new C++ project in Visual Studio and you're ready to go - try it with the example below. There's no need to modify project settings.
 
 #define CURL_STATICLIB
